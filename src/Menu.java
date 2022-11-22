@@ -64,6 +64,14 @@ public class Menu {
                     int b1=obj.tea(n2);
                     menuList.add(String.valueOf(b1));
                     break;
+                case 3:
+                    System.out.println("Enter the number snacks you want");
+                    int n3=s.nextInt();
+                    int b2=obj.tea(n3);
+                    menuList.add(String.valueOf(b2));
+                    break;
+
+
 
             }
         }
