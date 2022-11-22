@@ -70,6 +70,13 @@ public class Menu {
                     int b2=obj.tea(n3);
                     menuList.add(String.valueOf(b2));
                     break;
+                case 4:
+                    System.out.println("Enter the number idli you want");
+                    int n4=s.nextInt();
+                    int b3=obj.tea(n4);
+                    menuList.add(String.valueOf(b3));
+                    break;
+
 
 
 
