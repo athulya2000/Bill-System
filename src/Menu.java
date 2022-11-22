@@ -76,6 +76,13 @@ public class Menu {
                     int b3=obj.tea(n4);
                     menuList.add(String.valueOf(b3));
                     break;
+                case 5:
+                    System.out.println("Enter the number dosha you want");
+                    int n5=s.nextInt();
+                    int b4=obj.tea(n5);
+                    menuList.add(String.valueOf(b4));
+                    break;
+
 
 
 
