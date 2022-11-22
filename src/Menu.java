@@ -15,7 +15,7 @@ class Bill{
         this.dosha=dosha;
     }
    int tea(int n1){
-        int price1=this.tea*n;
+        int price1=this.tea*n1;
         return price1;
     }
     int coffee(int n2){
@@ -38,11 +38,28 @@ class Bill{
 }
 public class Menu {
     public static void main(String[] args) {
-        ArrayList<Bill> menuList=new ArrayList<Bill>();
+        ArrayList<String> menuList=new ArrayList<String>();
         Bill obj=new Bill();
-        System.out.println("MENU \n 1.TEA-10 \n 2.COFFEE-15 \n 3.SNACKS-10 \n 4.IDLI-8 \n 5.DOSHA \n 6.Generate Bill \n 7.View All Transaction \n 8.Exit");
-        System.out.println("choose your option");
+        System.out.println("Enter your name: ");
         Scanner s=new Scanner(System.in);
-        int mn=s.nextInt();
+        String name=s.next();
+        menuList.add(name);
+        System.out.println("Enter your phone number: ");
+        String phNo=s.next();
+        menuList.add(phNo);
+        while(true){
+            System.out.println("MENU \n 1.TEA-10 \n 2.COFFEE-15 \n 3.SNACKS-10 \n 4.IDLI-8 \n 5.DOSHA \n 6.Generate Bill \n 7.View All Transaction \n 8.Exit");
+            System.out.println("choose your option");
+            int mn=s.nextInt();
+            switch (mn){
+                case 1:
+                    System.out.println("Enter the number tea you want");
+                    int n1=s.nextInt();
+                    int b=obj.tea(n1);
+                    menuList.add(String.valueOf(b));
+                    break;
+            }
+        }
+
     }
 }
